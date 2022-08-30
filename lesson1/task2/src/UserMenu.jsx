@@ -3,11 +3,11 @@ import { userContext } from './user-context';
 
 class UserMenu extends Component {
   render() {
-    const { name, url, alt } = this.context;
+    const { name, avatar_url } = this.context;
     return (
       <div className='menu'>
         <span className='menu__greeting'>Hello, {name}</span>
-        <img src={url} alt={alt} className='menu__avatar' />
+        <img src={avatar_url} alt='User Avatar' className='menu__avatar' />
       </div>
     )
   }

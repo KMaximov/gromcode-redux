@@ -6,8 +6,7 @@ class App extends React.Component {
   state = {
     userData: {
       name: 'Nikola Tesla',
-      url: 'https://avatars3.githubusercontent.com/u10001',
-      alt: 'User Avatar'
+      avatar_url: 'https://avatars3.githubusercontent.com/u10001',
     },
   };
 
