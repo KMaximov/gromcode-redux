@@ -4,13 +4,13 @@ import { themes, ThemeContext } from './themes-context';
 
 class App extends React.Component {
   state = {
-    theme: themes.dark,
+    theme: themes.light,
   };
 
   toogleTheme = () => {
-    const newTheme = this.state.theme === themes.dark
-      ? themes.light
-      : themes.dark;
+    const newTheme = this.state.theme === themes.light
+      ? themes.dark
+      : themes.light;
 
     this.setState({
       theme: newTheme,
