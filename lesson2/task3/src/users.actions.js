@@ -1,4 +1,4 @@
-export const addUser = (name, id) => {
+export const addUser = ({ name, id }) => {
   return {
     type: 'USER/ADD',
     userData: {
@@ -8,7 +8,7 @@ export const addUser = (name, id) => {
   }
 };
 
-export const deleteUser = id => {
+export const deleteUser = (id) => {
   return {
     type: 'USER/DELETE',
     userData: {
