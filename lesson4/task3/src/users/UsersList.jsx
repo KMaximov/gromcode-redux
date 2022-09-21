@@ -7,7 +7,6 @@ import * as usersActions from './users.actions';
 class UsersList extends Component {
   render() {
     const { users, userPage, currentPage, toogleNextPage, tooglePrevPage } = this.props;
-    console.log(this.props)
     return (
       <div>
         <Pagination
@@ -28,7 +27,6 @@ class UsersList extends Component {
 };
 
 const mapState = state => {
-  console.log(state.users)
   return {
     users: state.users,
     currentPage: state.currentPage,
