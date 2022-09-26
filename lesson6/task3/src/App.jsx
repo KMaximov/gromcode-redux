@@ -5,10 +5,8 @@ import Weather from './weather/Weather';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <main className='weather'>
+    <Provider store={store}>  
         <Weather />
-      </main>
     </Provider>
   );
 };

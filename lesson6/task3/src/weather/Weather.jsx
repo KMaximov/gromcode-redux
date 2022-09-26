@@ -7,7 +7,7 @@ import * as weatherActions from './weather.actions';
 const Weather = ({ weatherDataList, getWeatherData }) => {
   getWeatherData();
   return (
-    <>
+    <main className='weather'>
       <h1 className='weather__title'>Weather data</h1>
       <ul className='cities-list'>
         {weatherDataList.map(city => {
@@ -19,7 +19,7 @@ const Weather = ({ weatherDataList, getWeatherData }) => {
           )
         })}
       </ul>
-    </>
+    </main>
   );
 };
 
