@@ -35,7 +35,7 @@ const mapState = state => {
 };
 
 const mapDispatch = {
-  getWeatherData: weatherActions.fetchWeatherData,
+  getWeatherData: weatherActions.getWeatherData,
 };
 
 const connector = connect(mapState, mapDispatch);
